@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Weeding</title>
+</head>
+<body>
+    <div class="container">
+        <header><h1>Your Weeding</h1>
+        <div class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Place</a></li>
+            <li><a href="#">Dress</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+    </header>
+    </div>
+    <div class="photo">
+    <img src="https://cdn.newsapi.com.au/image/v1/ac0699a63c3f47d11e8d2775d53700ad">
+    <div class="label">
+    <h2>Your Day</h2>
+    <h3>Your wish Your best day</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem a itaque amet iure ab, fugiat cupiditate harum commodi quaerat illum molestiae dolores sed corporis eius perferendis. Qui, error? Expedita, fugit?</p>
+    <button>Hire</button>
+    <div class="play" onclick="trailer()">
+    <img src="play.png"><span>Play Video</span></div>
+</div>
+
+<div class="pre">
+    <div class="label1">
+        <h1>Pre Weeding</h1>
+        <img src="https://www.zowed.com/blog/wp-content/uploads/2019/02/snow-mountain.jpeg">
+        <p>You are my today and All of my tomorrows</p>
+    </div>
+    <div class="label2">
+        <h1>Weeding Day</h1>
+        <img src="https://i.pinimg.com/originals/61/ed/8c/61ed8cec1874ca3016dc7cbfd1022c42.jpg">
+        <p>Together is  a beautful palce to be</p>
+    </div>
+</div>
+    <div class="ring">
+        <h3>The Most Beautful 4 Rings In The World </h3>
+        <div class="images">
+            <div class="img1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTdzPOFzFyQ4iP7_fDcRpZQNu8yh1MZj_5Biw&usqp=CAU">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o" ></i>
+                <i class="fa fa-star-o" ></i>
+                <p>$100</p>
+            </div>
+            <div class="img2">
+                <img src="https://wallpapercave.com/wp/wp4540594.jpg">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o" ></i>
+                <p>$120</p>
+            </div>
+            <div class="img3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ1_RGOfNZbtxC9wjQ44-yIZ4jts_JKEyoLHg&usqp=CAU">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o" ></i>
+                <p>$128</p>
+            </div>
+            <div class="img4">
+                <img src="https://wallpaperaccess.com/full/2149559.jpg">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <p>$150</p>
+         </div>  
+  </div>
+</div>
+     <div class="footer">
+         <ul>
+             <li><a href="#"><img src="facebook.png"></a></li>
+             <li><a href="#"><img src="instagram.png"></a></li>
+             <li><a href="#"><img src="twitter.png"></a></li>
+         </ul>
+         <p>Powered by G00gle <span>@2020 copy right and Weeding</span></p>
+     </div>        
+</div>
+<div class="vd" >
+    <video src="clip.mp4" controls='true'></video>
+    <img src="close (1).png" class="close" onclick="trailer()">
+</div>
+<script>
+    function trailer(){
+       const vd = document.querySelector('.vd')
+       const video = document.querySelector('video')
+       vd.classList.toggle('active')
+       video.currentTime = 0;
+       video.pause();
+    }
+</script>
+</body>
+</html>
